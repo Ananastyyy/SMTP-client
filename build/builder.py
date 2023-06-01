@@ -1,4 +1,4 @@
-from data import Header
+from build.data import Header
 from handler import handle_config, handle_text_message, handle_files
 
 BOUNDARY = "bound.40629"

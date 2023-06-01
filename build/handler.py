@@ -3,12 +3,12 @@ import json
 import os
 from datetime import datetime
 
-from data import Header, File, content_types
+from build.data import Header, File, content_types
 
 
 # Достаем всю информацию из конфигураций
 def handle_config():
-    with open('../dependencies/config.json', 'r', encoding="utf-8") as json_file:  # новое
+    with open('dependencies/config.json', 'r', encoding="utf-8") as json_file:  # новое
         file = json.load(json_file)
 
         name_from = file['from']  # считываем из конфига кто отправляет
@@ -75,6 +75,6 @@ def handle_files(path_to_send_files):
 
 
 def handle_password():
-    with open("../dependencies/password.txt", "r", encoding="UTF-8") as file:
+    with open("dependencies/password.txt", "r", encoding="UTF-8") as file:
         password = file.read().strip()  # считываем пароль из файла
     return password
