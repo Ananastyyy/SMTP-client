@@ -1,0 +1,5 @@
+Русский текст
+.
+Сверху одна точка в отдельной строке
+And now english text and under that row will be two dot
+..
